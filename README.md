@@ -1,6 +1,6 @@
 # Desk Setups Inspiration
 
-Welcome to Desk Setups Inspiration, where you can discover inspiring computer desk setups<-- from well-known tech YouTubers-->. This project lists setups along with product links and details about the setup owners.
+Welcome to Desk Setups Inspiration, where you can discover inspiring computer desk setups. This project lists setups along with product links and details about the setup owners.
 
 ## Features
 
