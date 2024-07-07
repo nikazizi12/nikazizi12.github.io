@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Product Image Map</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="setupOverview.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/setupOverview.css" />
   </head>
   <body>
     <!-- Include Header -->
@@ -64,22 +64,7 @@
 
     <!-- Include Footer -->
     <footer id="footer-placeholder" class="footer"></footer>
-    <script>
-      // Load header and footer
-      fetch("header.html")
-        .then((response) => response.text())
-        .then(
-          (data) =>
-            (document.getElementById("header-placeholder").innerHTML = data)
-        );
-
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then(
-          (data) =>
-            (document.getElementById("footer-placeholder").innerHTML = data)
-        );
-    </script>
-    <script src="setupOverview.js"></script>
+    <script src="js/loadPartials.js"></script>
+    <script src="js/setupOverview.js"></script>
   </body>
 </html>

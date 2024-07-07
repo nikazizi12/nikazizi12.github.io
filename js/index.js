@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let options = []; // Initialize options array
 
   function fetchDataAndInitialize() {
-    fetch("optionsData.json")
+    fetch("assets/optionsData.json")
       .then((response) => response.json())
       .then((data) => {
         // Assign data to the outer scoped 'options' array

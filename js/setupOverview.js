@@ -13,8 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const id = urlParams.get("id");
   let ownerInfo = {}; // Initialize ownerInfo object
 
+  if (!id) {
+      // Redirect to the specified URL if id parameter doesn't exist
+      window.location.href = "setupOverview.html?id=owner0";
+  }
+  
   // Fetch options data from optionsData.json
-  fetch("optionsData.json")
+  fetch("assets/optionsData.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
