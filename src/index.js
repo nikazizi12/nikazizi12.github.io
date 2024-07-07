@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let options = []; // Initialize options array
 
   function fetchDataAndInitialize() {
-    fetch("optionsData.json")
+    fetch("src/optionsData.json")
       .then((response) => response.json())
       .then((data) => {
         // Assign data to the outer scoped 'options' array
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Make entire row clickable
         row.addEventListener("click", function () {
           console.log(`Opened option: ${option.name}`);
-          window.location.href = `setupOverview.html?id=${option.id}`;
+          window.location.href = `src/setupOverview.html?id=${option.id}`;
         });
 
         optionsList.appendChild(row);
