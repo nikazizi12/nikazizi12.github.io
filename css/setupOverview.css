@@ -1,5 +1,4 @@
 /* setupOverview.css */
-/* Toggle button and owner details styles */
 .owner-details {
     display: none;
     background-color: #f0f0f0;
@@ -9,7 +8,6 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333;
-    /* Dark text for readability */
 }
 
 .owner-details p {
@@ -19,9 +17,7 @@
 #toggleOwnerDetails,
 #sourceButton {
     background-color: #555;
-    /* Dark gray */
     color: #fff;
-    /* White text */
     border: none;
     margin-top: 10px;
     padding: 10px 20px;
@@ -34,9 +30,7 @@
 #sourceButton:hover {
     transition: background-color 0.3s ease, transform 0.1s ease;
     background-color: #333;
-    /* Darker gray on hover */
     transform: scale(1.03);
-    /* Slight scale effect on hover */
 }
 
 .tooltip {
@@ -51,7 +45,6 @@
 
 .highlighted {
     background-color: #fcfcad;
-    /* Light yellow background */
 }
 
 .hidden {

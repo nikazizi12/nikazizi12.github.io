@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get query parameter
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get("id");
-  let ownerInfo = {}; // Initialize ownerInfo object
+  let ownerInfo = {};
 
   if (!id) {
       // Redirect to the specified URL if id parameter doesn't exist
