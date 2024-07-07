@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disclaimer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Include Header -->
+    <header id="header-placeholder"></header>
+    <main>
+      <div class="container">
+        <h1>Disclaimer</h1>
+        <p><em>Last updated: 2024-7-4</em></p>
+
+        <h2>Affiliate Disclosure</h2>
+        <p>
+          Some of the links on this website are affiliate links. This means that
+          if you click on the link and make a purchase, i may receive a
+          commission at no additional cost to you. We only recommend products
+          and services that we believe will add value to our users.
+        </p>
+
+        <h2>Content and Images</h2>
+        <p>
+          All images and content related to the setups are sourced from publicly
+          available information and are credited to the respective owners. If
+          you are the owner of any content featured on this site and would like
+          it removed, please contact me at
+          <a href="mailto:nikazizicareer@gmail.com">My Email</a>.
+        </p>
+
+        <h2>Accuracy of Information</h2>
+        <p>
+          I strive to provide accurate and up-to-date information. However, i
+          make no warranties or representations about the accuracy or
+          completeness of the information provided on this website. Any reliance
+          you place on such information is strictly at your own risk.
+        </p>
+
+        <h2>Limitation of Liability</h2>
+        <p>
+          Under no circumstances will we be liable for any loss or damage,
+          including without limitation, indirect or consequential loss or
+          damage, or any loss or damage whatsoever arising from the use of this
+          website or reliance on any information provided on this website.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions about this disclaimer, please contact me at
+          <a href="mailto:nikazizicareer@gmail.com">My Email</a>.
+        </p>
+      </div>
+    </main>
+    <!-- Include Footer -->
+    <footer id="footer-placeholder" class="footer"></footer>
+    <script>
+      // Load header and footer
+      fetch("header.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("header-placeholder").innerHTML = data)
+        );
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>

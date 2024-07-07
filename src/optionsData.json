@@ -1,0 +1,71 @@
+[
+  {
+    "id": "owner0",
+    "name": "The Website Developer",
+    "category": "Personal",
+    "description": "inExperienced web developer with a focus on creating interactive and user-friendly websites.",
+    "basedIn": "Malaysia",
+    "website": "nikazizi563.github.io",
+    "followers": "N/A",
+    "popularContent": "N/A",
+    "contact": "nikazizicareer@gmail.com",
+    "imagePath": "assets/owner0/202407_owner0_desk_setup.jpg",
+    "sourceLink": "https://example.com/owner0",
+    "products": [
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "Monitor",
+        "href": "#",
+        "dataInfo": "Acer Nitro VG270P",
+        "link1": "https://s.shopee.com.my/7KcGi4fgvL",
+        "link2": "https://c.lazada.com.my/t/c.cGqKjU"
+      },
+      {
+        "shape": "rect",
+        "coords": "171,402,333,469",
+        "alt": "Tablet",
+        "href": "#",
+        "dataInfo": "Samsung Tab A8 2021",
+        "link1": "https://s.shopee.com.my/9A3utfouy1",
+        "link2": "https://c.lazada.com.my/t/c.cGqKjV"
+      },
+      {
+        "shape": "rect",
+        "coords": "71,471,337,532",
+        "alt": "Keyboard",
+        "href": "#",
+        "dataInfo": "Royal Kludge RK H81",
+        "link1": "https://s.shopee.com.my/7AIqWWewHy",
+        "link2": "https://c.lazada.com.my/t/c.cGqKjg"
+      },
+      {
+        "shape": "rect",
+        "coords": "440,470,491,509",
+        "alt": "Mouse",
+        "href": "#",
+        "dataInfo": "Logitech G304",
+        "link1": "https://s.shopee.com.my/7zrxW8mwim",
+        "link2": "https://c.lazada.com.my/t/c.cGqKjT"
+      },
+      {
+        "shape": "rect",
+        "coords": "475,204,567,347",
+        "alt": "Controller",
+        "href": "#",
+        "dataInfo": "DS4 OEM",
+        "link1": "https://s.shopee.com.my/9f0BVIZZVE",
+        "link2": "https://s.shopee.com.my/9f0BVIZZVE"
+      },
+      {
+        "shape": "rect",
+        "coords": "637,205,780,408",
+        "alt": "Headphone",
+        "href": "#",
+        "dataInfo": "Cooler Master MH630",
+        "link1": "https://s.shopee.com.my/AUZIUvPZlA",
+        "link2": "https://c.lazada.com.my/t/c.cGqKj9"
+      }
+    ]
+  }
+]

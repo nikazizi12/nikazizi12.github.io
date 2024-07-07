@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Include Header -->
+    <header id="header-placeholder"></header>
+    <main>
+      <h2>Contact Us</h2>
+      <div class="container">
+        <div class="profile">
+          <!-- <img src="profile-picture.jpg" alt="Profile Picture"> -->
+          <h2>NIK AZIZI</h2>
+          <p>soloplayer</p>
+        </div>
+        <div class="links">
+          <a href="https://github.com/nikazizi563/">Github</a>
+          <!-- <a href="https://instagram.com/">Instagram</a> -->
+          <a href="https://twitter.com/ajiji_kun">Twitter</a>
+          <a href="https://linkin.com/in/nik-azizi-nik-yahya-666994216/"
+            >LinkedIn</a
+          >
+          <a href="mailto:nikazizicareer@gmail.com">Email</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Include Footer -->
+    <footer id="footer-placeholder" class="footer"></footer>
+    <script>
+      // Load header and footer
+      fetch("header.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("header-placeholder").innerHTML = data)
+        );
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        );
+    </script>
+  </body>
+</html>
