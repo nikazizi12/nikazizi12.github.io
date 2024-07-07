@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ggSetupOverview</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <!-- Include Header -->
@@ -51,20 +51,20 @@
     <footer id="footer-placeholder" class="footer"></footer>
     <script>
       // Load header and footer
-      fetch("header.html")
+      fetch("src/header.html")
         .then((response) => response.text())
         .then(
           (data) =>
             (document.getElementById("header-placeholder").innerHTML = data)
         );
 
-      fetch("footer.html")
+      fetch("src/footer.html")
         .then((response) => response.text())
         .then(
           (data) =>
             (document.getElementById("footer-placeholder").innerHTML = data)
         );
     </script>
-    <script defer type="module" src="index.js"></script>
+    <script defer type="module" src="src/index.js"></script>
   </body>
 </html>
