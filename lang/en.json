@@ -17,8 +17,8 @@
     }
   },
   "setupOverview": {
-    "pageTitle": "Setup Overview",
-    "pageDescription": "Detailed view of the setup.",
+    "pageTitle": "Discover Setup Details and Products",
+    "pageDescription": "Explore detailed setup information and find links to the products featured.",
     "ownerDetails": {
       "nameLabel": "Owner Name:",
       "basedInLabel": "Based In:",

@@ -81,8 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <td>${product.alt}</td>
                     <td>${product.dataInfo}</td>
                     <td>
-                        <a href="${product.link1}" target="_blank">Shopee</a> |
-                        <a href="${product.link2}" target="_blank">Lazada</a>
+                        <a href="${product.link1}" target="_blank">Shopee</a>
                     </td>
                 `;
         tableBody.appendChild(row);

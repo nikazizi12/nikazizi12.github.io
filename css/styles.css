@@ -162,10 +162,7 @@ tr.option {
 }
 
 tr.option:hover {
-    background-color: #f0f0f0;
-    /* Light Gray on hover */
-    transform: scale(1.006);
-    /* Slight scale effect on hover */
+    background-color: #fdfc9c;
 }
 
 /* Style specific columns */
@@ -326,41 +323,45 @@ td.columnOption:hover {
 #filterOptions option {
     padding: 8px;
 }
+
 .language-frame {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px; /* Adjust width as needed */
     align-items: center;
+    text-align: center;
   }
   
   .language-frame a {
-    margin: 10px;
-    padding: 10px 20px;
+    margin: 15px 0;
+    padding: 15px 30px;
     text-decoration: none;
     color: #333;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
   }
   
   .language-frame a:hover {
-    background-color: #d3d3d3;
+    background-color: #333;
+    color: #ffffff;
   }
   
   .language-frame a.active {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #333;
     transform: scale(1.05);
   }
   
