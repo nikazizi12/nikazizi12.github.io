@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": "gg Setup Overview",
+    "about": "Tentang",
+    "disclaimer": "Penafian",
+    "contact": "Hubungi"
+  },
+  "index": {
+    "pageTitle": "Temui Susunan Meja Komputer yang Menginspirasi",
+    "pageDescription": "Terokai pelbagai susunan meja komputer yang unik dan menginspirasi dari seluruh dunia.",
+    "searchPlaceholder": "Carian",
+    "allCategories": "Semua Kategori",
+    "tableHeaders": {
+      "no": "No",
+      "source": "Sumber",
+      "action": "Tindakan"
+    }
+  },
+  "setupOverview": {
+    "pageTitle": "Gambaran Keseluruhan Setup",
+    "pageDescription": "Pandangan terperinci mengenai susunan.",
+    "ownerDetails": {
+      "nameLabel": "Nama Pemilik:",
+      "basedInLabel": "Berpusat Di:",
+      "websiteLabel": "Laman Web:",
+      "categoryLabel": "Kategori:",
+      "descriptionLabel": "Penerangan:",
+      "followersLabel": "Pengikut:",
+      "popularContentLabel": "Kandungan Popular:",
+      "viewOwnerPage": "Lihat Halaman Pemilik"
+    },
+    "tableHeaders": {
+      "no": "No",
+      "productType": "Jenis Produk",
+      "productName": "Nama Produk",
+      "productLinks": "Pautan Produk"
+    }
+  },
+  "about": {
+    "pageTitle": "Tentang Kami",
+    "description1": "Selamat datang ke ggSetupOverview, ruang digital di mana kreativiti dan ketabahan berkumpul...",
+    "description2": "Idea untuk laman web ini muncul dari tempat yang sangat peribadi...",
+    "description3": "Melalui pengalaman dan perjalanan saya, saya telah memahami kuasa...",
+    "description4": "Sertai saya dalam usaha yang sepi tetapi memuaskan ini sambil kita meneroka..."
+  },
+  "contact": {
+    "pageTitle": "Hubungi Kami",
+    "profileName": "NIK AZIZI",
+    "profileDescription": "soloplayer",
+    "github": "Github",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "email": "E-mel"
+  },
+  "disclaimer": {
+    "pageTitle": "Penafian",
+    "affiliateDisclosureTitle": "Pendedahan Afiliasi",
+    "affiliateDisclosureContent": "Beberapa pautan di laman web ini adalah pautan afiliasi...",
+    "contentAndImagesTitle": "Kandungan dan Imej",
+    "contentAndImagesContent": "Semua imej dan kandungan yang berkaitan dengan susunan adalah berasal dari sumber awam...",
+    "accuracyOfInformationTitle": "Ketepatan Maklumat",
+    "accuracyOfInformationContent": "Saya berusaha untuk menyediakan maklumat yang tepat dan terkini...",
+    "limitationOfLiabilityTitle": "Had Tanggungjawab",
+    "limitationOfLiabilityContent": "Dalam apa jua keadaan kami tidak akan bertanggungjawab untuk sebarang kerugian atau kerosakan...",
+    "contactUsTitle": "Hubungi Kami",
+    "contactUsContent": "Jika anda mempunyai sebarang soalan tentang penafian ini, sila hubungi saya..."
+  }
+}

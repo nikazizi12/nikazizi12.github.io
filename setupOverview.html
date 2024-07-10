@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Product Image Map</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/setupOverview.css" />
-  </head>
-  <body>
-    <header id="header-placeholder"></header>
-    <main>
-      <h2>Interactive Setup Overview</h2>
-      <p>Hover your mouse over the picture to explore:</p>
-      <div class="container">
-        <img
-          src=""
-          alt="Products"
-          usemap="#productmap"
-          class="main-image"
-          id="mainImage"
-        />
-        <map name="productmap" id="productmap">
-          <!-- Generated coordinates will be inserted here -->
-        </map>
-        <div id="tooltip" class="tooltip"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setup Overview Site</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/setupOverview.css" />
+</head>
+<body>
+  <header id="header-placeholder"></header>
+  <main>
+    <h1 id="overviewTitle">Discover Setup Details and Products</h1>
+    <p id="overviewDescription">Explore detailed setup information and find links to the products featured.</p>
+    <div class="container">
+      <img src="" alt="Products" usemap="#productmap" class="main-image" id="mainImage" />
+      <map name="productmap" id="productmap">
+        <!-- Generated coordinates will be inserted here -->
+      </map>
+      <div id="tooltip" class="tooltip"></div>
 
-        <!-- Toggle button for owner details -->
-        <button id="toggleOwnerDetails">View Owner Details</button>
+      <!-- Toggle button for owner details -->
+      <button id="toggleOwnerDetails">View Owner Details</button>
 
-        <!-- Owner details section -->
-        <div id="ownerDetailsSection" class="owner-details hidden">
-          <p>Owner Name : <span id="ownerName"></span></p>
-          <p>Based in : <span id="basedIn"></span></p>
-          <p>
-            Website or Channel:
-            <span id="website"><a href="#">www.example.com</a></span>
-          </p>
-          <p>Category: <span id="category"></span></p>
-          <p>Description: <span id="description"></span></p>
-          <p>Followers/Subscribers: <span id="followers"></span></p>
-          <p>Most Popular Video/Article: <span id="popularContent"></span></p>
-          <!-- <p>Contact Information: <span id="contact"></span></p> -->
-          <button id="sourceButton">View Owner Page</button>
-        </div>
+      <!-- Owner details section -->
+      <div id="ownerDetailsSection" class="owner-details hidden">
+        <p><span id="ownerNameLabel">Owner Name:</span> <span id="ownerName"></span></p>
+        <p><span id="basedInLabel">Based in:</span> <span id="basedIn"></span></p>
+        <p><span id="websiteLabel">Website or Channel:</span> <span id="website"><a href="#">www.example.com</a></span></p>
+        <p><span id="categoryLabel">Category:</span> <span id="category"></span></p>
+        <p><span id="descriptionLabel">Description:</span> <span id="description"></span></p>
+        <p><span id="followersLabel">Followers/Subscribers:</span> <span id="followers"></span></p>
+        <p><span id="popularContentLabel">Most Popular Video/Article:</span> <span id="popularContent"></span></p>
+        <!-- <p><span id="contactLabel">Contact Information:</span> <span id="contact"></span></p> -->
+        <button id="sourceButton">View Owner Page</button>
       </div>
-      <table id="productTableContainer">
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Product Type</th>
-            <th>Product Name</th>
-            <th>Product Links</th>
-          </tr>
-        </thead>
-        <tbody id="productTableBody">
-          <!-- Placeholder for dynamic content -->
-        </tbody>
-      </table>
-    </main>
-    <footer id="footer-placeholder" class="footer"></footer>
-    <script src="js/loadPartials.js"></script>
-    <script src="js/setupOverview.js"></script>
-  </body>
+    </div>
+    <table id="productTableContainer">
+      <thead>
+        <tr>
+          <th id="tableHeaderNo">No</th>
+          <th id="tableHeaderProductType">Product Type</th>
+          <th id="tableHeaderProductName">Product Name</th>
+          <th id="tableHeaderProductLinks">Product Links</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+        <!-- Placeholder for dynamic content -->
+      </tbody>
+    </table>
+  </main>
+  <footer id="footer-placeholder" class="footer"></footer>
+  <script src="js/loadPartials.js"></script>
+  <script src="js/setupOverview.js"></script>
+  <script src="js/applyLanguage.js"></script>
+</body>
 </html>

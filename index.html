@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ggSetupOverview</title>
     <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
+</head>
+<body>
     <!-- Include Header -->
     <header id="header-placeholder"></header>
-
-    <main>
-      <h2>Discover Inspiring Computer Desk Setups</h2>
-      <p>Explore a variety of unique and inspiring computer desk setups.</p>
-      <p>
-        Select a setup to explore further and gather ideas for your own
-        workspace:
-      </p>
-
-      <input type="text" id="searchInput" placeholder="Search" />
-      <select id="filterOptions">
-        <option value="all">All Categories</option>
-        <option value="Malaysia">Malaysia</option>
-        <option value="Singapore">Singapore</option>
-        <option value="Indonesia">Indonesia</option>
-        <option value="USA">USA</option>
-        <option value="Canada">Canada</option>
-        <option value="Australia">Australia</option>
-        <option value="United Kingdom">United Kingdom</option>
-        <!-- Add more categories as needed -->
-      </select>
-
-      <table id="optionsTable">
-        <thead>
-          <tr>
-            <th class="no-column">No</th>
-            <th>Source</th>
-            <th class="no-column2">Action</th>
-          </tr>
-        </thead>
-        <tbody class="options-list">
-          <!-- Options will be dynamically generated here -->
-        </tbody>
-      </table>
-
-      <div id="paginationButtons" class="pagination"></div>
+    <main id="main-content">
+        <h2>Discover Inspiring Computer Desk Setups</h2>
+        <p>Explore a variety of unique and inspiring computer desk setups from around the world.</p>
+        <input type="text" id="searchInput" placeholder="Search" />
+        <select id="filterOptions">
+            <option value="all">All Categories</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="United Kingdom">United Kingdom</option>
+        </select>
+        <table id="optionsTable">
+            <thead>
+                <tr>
+                    <th class="no-column">No</th>
+                    <th>Source</th>
+                    <th class="no-column2">Action</th>
+                </tr>
+            </thead>
+            <tbody class="options-list"></tbody>
+        </table>
+        <div id="paginationButtons" class="pagination"></div>
+        <!-- <button id="toggleLanguageFrame">Change Language</button> -->
     </main>
-
     <!-- Include Footer -->
     <footer id="footer-placeholder" class="footer"></footer>
     <script src="js/loadPartials.js"></script>
     <script defer type="module" src="js/index.js"></script>
-  </body>
+    <script src="js/applyLanguage.js"></script>
+    <!-- <script>
+      document.getElementById('toggleLanguageFrame').addEventListener('click', function() {
+        const languageFrame = document.getElementById('languageFrame');
+        if (languageFrame.classList.contains('hidden')) {
+          languageFrame.classList.remove('hidden');
+        } else {
+          languageFrame.classList.add('hidden');
+        }
+      });
+    </script> -->
+</body>
 </html>
