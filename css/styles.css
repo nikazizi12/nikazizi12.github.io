@@ -167,8 +167,7 @@ tr.option:hover {
 
 /* Style specific columns */
 td.columnOption:hover {
-    background-color: #dddddd;
-    transform: scale(1.006);
+    background-color: #f7f32c;
     /* Slight scale effect on hover */
 }
 

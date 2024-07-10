@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!id) {
       // Redirect to the specified URL if id parameter doesn't exist
-      window.location.href = "setupOverview.html?id=owner0";
+      window.location.href = "setupOverview.html?id=user0";
   }
   
   // Fetch options data from optionsData.json

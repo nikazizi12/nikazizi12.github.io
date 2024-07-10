@@ -1,15 +1,15 @@
 [
   {
-    "id": "owner0",
+    "id": "user0",
     "name": "The Website Developer",
     "category": "Personal",
     "description": "inExperienced web developer with a focus on creating interactive and user-friendly websites.",
     "basedIn": "Malaysia",
-    "website": "nikazizi563.github.io",
+    "website": "https://nikazizi563.github.io",
     "followers": "N/A",
     "popularContent": "N/A",
     "contact": "nikazizicareer@gmail.com",
-    "imagePath": "assets/img/owner0/202407_owner0_desk_setup.jpg",
+    "imagePath": "assets/img/user0/202407_owner0_desk_setup.jpg",
     "sourceLink": "https://example.com/owner0",
     "products": [
       {
@@ -92,6 +92,147 @@
         "dataInfo": "2 Layer Desktop Storage Shelf",
         "link1": "https://shope.ee/4fZH439mbc?share_channel_code=1 ",
         "link2": "https://shope.ee/4fZH439mbc?share_channel_code=1 "
+      }
+    ]
+  },
+  {
+    "id": "user1",
+    "name": "Isa Isarb",
+    "category": "Youtuber",
+    "description": "N/A",
+    "basedIn": "Malaysia",
+    "website": "https://www.youtube.com/@IsaIsarb",
+    "followers": "2.58M subscribers",
+    "popularContent": "Isa Isarb - Sampai (Official Music Video)",
+    "contact": "N/A",
+    "imagePath": "assets/img/user1/20230110_setup1_desk_setup.png",
+    "sourceLink": "https://www.youtube.com/watch?v=HeGcdOGG6A0",
+    "products": [
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "Monitor",
+        "href": "#",
+        "dataInfo": "Samsung Odyssey G9 Neo",
+        "link1": "https://s.shopee.com.my/8pRIkNOywV",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "CPU",
+        "href": "#",
+        "dataInfo": "INTEL CORE i9-13900KF",
+        "link1": "https://s.shopee.com.my/2qA5bKLlD0",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "CPU COOLER",
+        "href": "#",
+        "dataInfo": "NZXT KRAKEN X73 RGB",
+        "link1": "https://s.shopee.com.my/4VIJaNBQ5T",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "RAM",
+        "href": "#",
+        "dataInfo": "KINGSTON FURY 128GB DDR5 (5600MHZ)",
+        "link1": "https://s.shopee.com.my/LSkcg1cfk",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "MOTHERBOARD",
+        "href": "#",
+        "dataInfo": "ASUS ROG MAXIMUS Z790 HERO",
+        "link1": "https://s.shopee.com.my/2qA5bB3SxO",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "GPU",
+        "href": "#",
+        "dataInfo": "RTX 4090",
+        "link1": "https://s.shopee.com.my/30TVnLjvXS",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "PSU",
+        "href": "#",
+        "dataInfo": "CORSAIR AX1600i",
+        "link1": "https://s.shopee.com.my/4KytNlSb6C",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "EXTERNAL SSD",
+        "href": "#",
+        "dataInfo": "SANDISK EXTREME PORTABLE",
+        "link1": "https://s.shopee.com.my/4AfTBRP6Ay",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "PC CASE",
+        "href": "#",
+        "dataInfo": "NZXT H7 ELITE",
+        "link1": "https://s.shopee.com.my/LSkcNmtZT",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "MOUSE",
+        "href": "#",
+        "dataInfo": "LOGITECH G502 X PLUS Wireless RGB",
+        "link1": "https://s.shopee.com.my/qP1DGqKwg",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "KEYBOARD",
+        "href": "#",
+        "dataInfo": "LOGITECH G713 Mechanical Gaming Keyboard",
+        "link1": "https://s.shopee.com.my/8ABbwiyM9X",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "HEADSET",
+        "href": "#",
+        "dataInfo": "LOGITECH G735 Wireless Gaming Headset",
+        "link1": "https://s.shopee.com.my/3fjCaMzydf",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "MOUSE PAD",
+        "href": "#",
+        "dataInfo": "STEELSERIES QCK PRISM",
+        "link1": "https://s.shopee.com.my/9zdG84rmTZ",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "EDITING CONSOLE",
+        "href": "#",
+        "dataInfo": "LOOPEDECK EDITING CONSOLE",
+        "link1": "https://s.shopee.com.my/3AmvzJ17H8",
+        "link2": "N/A"
       }
     ]
   }
