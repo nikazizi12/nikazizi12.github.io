@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tooltip = document.getElementById("tooltip");
   const mainImage = document.getElementById("mainImage");
-  const productMap = document.getElementById("productmap");
+  // const productMap = document.getElementById("productmap");
   const sourceButton = document.getElementById("sourceButton");
   const productTableContainer = document.getElementById(
     "productTableContainer"
@@ -56,18 +56,18 @@ document.addEventListener("DOMContentLoaded", function () {
       mainImage.src = ownerInfo.imagePath;
 
       // Dynamically generate areas based on products
-      ownerInfo.products.forEach((product, index) => {
-        const area = document.createElement("area");
-        area.setAttribute("shape", product.shape);
-        area.setAttribute("coords", product.coords);
-        area.setAttribute("alt", product.alt);
-        area.setAttribute("href", product.href);
-        area.setAttribute("data-info", product.dataInfo);
-        productMap.appendChild(area);
+      // ownerInfo.products.forEach((product, index) => {
+      //   const area = document.createElement("area");
+      //   area.setAttribute("shape", product.shape);
+      //   area.setAttribute("coords", product.coords);
+      //   area.setAttribute("alt", product.alt);
+      //   area.setAttribute("href", product.href);
+      //   area.setAttribute("data-info", product.dataInfo);
+      //   productMap.appendChild(area);
 
-        // Add custom attribute to relate area to table row index
-        area.setAttribute("data-row-index", index);
-      });
+      //   // Add custom attribute to relate area to table row index
+      //   area.setAttribute("data-row-index", index);
+      // });
 
       const tableBody = document.getElementById("productTableBody");
 
@@ -134,49 +134,49 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
 
-      tableRows.forEach((row) => {
-        row.addEventListener("click", function () {
-          const rowIndex = row.dataset.rowIndex;
-          highlightArea(rowIndex);
+      // tableRows.forEach((row) => {
+      //   row.addEventListener("click", function () {
+      //     const rowIndex = row.dataset.rowIndex;
+      //     highlightArea(rowIndex);
 
-          // Scroll to the main image
-          const scrollOffset = mainImage.offsetTop + 100;
-          window.scrollTo({
-            top: scrollOffset,
-            behavior: "smooth",
-          });
-        });
-      });
+      //     // Scroll to the main image
+      //     const scrollOffset = mainImage.offsetTop + 100;
+      //     window.scrollTo({
+      //       top: scrollOffset,
+      //       behavior: "smooth",
+      //     });
+      //   });
+      // });
 
       function highlightArea(index) {
-        // Remove existing highlights
-        const highlightedArea = document.querySelector(".highlight-outline");
-        if (highlightedArea) {
-          highlightedArea.remove();
-        }
+        // // Remove existing highlights
+        // const highlightedArea = document.querySelector(".highlight-outline");
+        // if (highlightedArea) {
+        //   highlightedArea.remove();
+        // }
 
-        // Highlight the clicked area
-        const selectedArea = areas[index];
-        const coords = selectedArea
-          .getAttribute("coords")
-          .split(",")
-          .map(Number);
+        // // Highlight the clicked area
+        // const selectedArea = areas[index];
+        // const coords = selectedArea
+        //   .getAttribute("coords")
+        //   .split(",")
+        //   .map(Number);
 
-        const outline = document.createElement("div");
-        outline.style.position = "absolute";
-        outline.style.border = "4px solid yellow";
-        outline.style.pointerEvents = "none";
-        outline.style.left = `${coords[0]}px`;
-        outline.style.top = `${coords[1]}px`;
-        outline.style.width = `${coords[2] - coords[0]}px`;
-        outline.style.height = `${coords[3] - coords[1]}px`;
-        outline.classList.add("highlight-outline");
-        mainImage.parentElement.appendChild(outline);
+        // const outline = document.createElement("div");
+        // outline.style.position = "absolute";
+        // outline.style.border = "4px solid yellow";
+        // outline.style.pointerEvents = "none";
+        // outline.style.left = `${coords[0]}px`;
+        // outline.style.top = `${coords[1]}px`;
+        // outline.style.width = `${coords[2] - coords[0]}px`;
+        // outline.style.height = `${coords[3] - coords[1]}px`;
+        // outline.classList.add("highlight-outline");
+        // mainImage.parentElement.appendChild(outline);
 
-        // Remove the outline after a delay
-        setTimeout(() => {
-          outline.remove();
-        }, 3000);
+        // // Remove the outline after a delay
+        // setTimeout(() => {
+        //   outline.remove();
+        // }, 3000);
       }
 
       function highlightTableRow(index) {
