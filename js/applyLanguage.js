@@ -19,17 +19,10 @@ function applyLanguage() {
         .then(data => {
           // Apply language to elements in header
           document.querySelector('.header-content h1 a').textContent = data.header.title;
-          // document.querySelector('.header-content nav ul li a[href="about.html"]').textContent = data.header.about;
-          // document.querySelector('.header-content nav ul li a[href="disclaimer.html"]').textContent = data.header.disclaimer;
-          // document.querySelector('.header-content nav ul li a[href="contact.html"]').textContent = data.header.contact;
-          // Apply language to elements in footer
-          // document.getElementById('copyrightText').textContent = data.footer.copyright;
 
           // Apply language based on the current page
-          // Determine the current page filename
           const currentPage = window.location.pathname.split('/').pop();
 
-          // Check if the current page is the index.html or setupOverview.html
           if (currentPage === '' || currentPage === 'index.html') {
             document.getElementById('main-content').querySelector('h2').textContent = data.index.pageTitle;
             document.getElementById('main-content').querySelector('p').textContent = data.index.pageDescription;
@@ -54,18 +47,6 @@ function applyLanguage() {
             document.getElementById('overviewTitle').textContent = data.setupOverview.pageTitle;
             document.getElementById('overviewDescription').textContent = data.setupOverview.pageDescription;
 
-            // const ownerDetailsSection = document.getElementById('ownerDetailsSection');
-            // if (ownerDetailsSection) {
-            //   ownerDetailsSection.querySelector('#ownerNameLabel').textContent = data.setupOverview.ownerDetails.nameLabel;
-            //   ownerDetailsSection.querySelector('#basedInLabel').textContent = data.setupOverview.ownerDetails.basedInLabel;
-            //   ownerDetailsSection.querySelector('#websiteLabel').textContent = data.setupOverview.ownerDetails.websiteLabel;
-            //   ownerDetailsSection.querySelector('#categoryLabel').textContent = data.setupOverview.ownerDetails.categoryLabel;
-            //   ownerDetailsSection.querySelector('#descriptionLabel').textContent = data.setupOverview.ownerDetails.descriptionLabel;
-            //   ownerDetailsSection.querySelector('#followersLabel').textContent = data.setupOverview.ownerDetails.followersLabel;
-            //   ownerDetailsSection.querySelector('#popularContentLabel').textContent = data.setupOverview.ownerDetails.popularContentLabel;
-            //   ownerDetailsSection.querySelector('#sourceButton').textContent = data.setupOverview.ownerDetails.viewOwnerPage;
-            // }
-
             const tableHeaders = document.querySelectorAll('#productTableContainer th');
             if (tableHeaders.length > 0) {
               tableHeaders[0].textContent = data.setupOverview.tableHeaders.no;
@@ -84,6 +65,15 @@ function applyLanguage() {
         .catch(error => console.error('Error fetching language file:', error));
     });
   });
+
+  // Hide language frame initially on about, contact, disclaimer pages
+  const currentPage = window.location.pathname.split('/').pop();
+  if (currentPage === 'about.html' || currentPage === 'contact.html' || currentPage === 'disclaimer.html') {
+    const languageFrame = document.getElementById('languageFrame');
+    if (languageFrame) {
+      languageFrame.classList.add('hidden');
+    }
+  }
 }
 
 // Call applyLanguage() when DOM content is loaded
