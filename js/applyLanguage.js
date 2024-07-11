@@ -36,8 +36,14 @@ function applyLanguage() {
     const currentPage = window.location.pathname.split('/').pop();
 
     if (currentPage === '' || currentPage === 'index.html') {
-      document.getElementById('main-content').querySelector('h2').textContent = data.index.pageTitle;
-      document.getElementById('main-content').querySelector('p').textContent = data.index.pageDescription;
+      // Ensure you are accessing the correct element from the HTMLCollection
+      const introSection = document.getElementsByClassName('intro-section')[0];
+      introSection.querySelector('h2').textContent = data.index.pageTitle;
+      introSection.querySelector('p').textContent = data.index.pageDescription;
+      // Ensure you are accessing the correct element from the HTMLCollection
+      const howItWorks = document.getElementsByClassName('how-it-works')[0];
+      howItWorks.querySelector('h3').textContent = data.index.tutoTitle;
+      howItWorks.querySelector('p').textContent = data.index.tutoDescription;
       document.getElementById('searchInput').setAttribute('placeholder', data.index.searchPlaceholder);
 
       const filterOptions = document.getElementById('filterOptions');

@@ -322,38 +322,5 @@
         "link2": "N/A"
       }
     ]
-  },
-  {
-    "id": "user3",
-    "name": "Example",
-    "category": "Example",
-    "description": "N/A",
-    "basedIn": "Malaysia",
-    "website": "https://www.Example.com/@Example",
-    "followers": "Example",
-    "popularContent": "N/A",
-    "contact": "N/A",
-    "imagePath": "assets/img/user0/202407_owner0_desk_setup.jpg",
-    "sourceLink": "https://www.Example.com/watch?v=q7CuTI3ndjM",
-    "products": [
-      {
-        "shape": "rect",
-        "coords": "80,192,447,403",
-        "alt": "Example",
-        "href": "#",
-        "dataInfo": "Example",
-        "link1": "https://s.shopee.com.my/8pRIkNOywV",
-        "link2": "N/A"
-      },
-      {
-        "shape": "rect",
-        "coords": "80,192,447,403",
-        "alt": "Example",
-        "href": "#",
-        "dataInfo": "Example",
-        "link1": "https://s.shopee.com.my/2qA5bKLlD0",
-        "link2": "N/A"
-      }
-    ]
   }
 ]

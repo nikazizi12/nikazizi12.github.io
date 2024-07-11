@@ -95,6 +95,15 @@ main {
     /* Adjust this value to match the height of your footer */
 }
 
+.how-it-works {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 2em;
+    transition: background-color 0.3s ease;
+    background-color: #eeeeee;
+}
+
 .container {
     position: relative;
     width: 100%;
