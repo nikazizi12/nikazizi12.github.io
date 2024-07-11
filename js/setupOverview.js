@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       basedIn.textContent = ownerInfo.basedIn;
       website.innerHTML = `<a href="${ownerInfo.website}" target="_blank">${ownerInfo.website}</a>`;
       category.textContent = ownerInfo.category;
-      description.textContent = ownerInfo.description;
+      // description.textContent = ownerInfo.description;
       followers.textContent = ownerInfo.followers;
-      popularContent.innerHTML = ownerInfo.popularContent;
+      // popularContent.innerHTML = ownerInfo.popularContent;
       // contact.textContent = ownerInfo.contact;
 
       // Update the image source

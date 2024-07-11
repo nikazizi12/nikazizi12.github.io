@@ -12,7 +12,7 @@
     "allCategories": "All Categories",
     "tableHeaders": {
       "no": "No",
-      "source": "Source",
+      "source": "Owner",
       "action": "Action"
     }
   },

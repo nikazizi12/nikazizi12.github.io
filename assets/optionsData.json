@@ -103,7 +103,7 @@
     "basedIn": "Malaysia",
     "website": "https://www.youtube.com/@IsaIsarb",
     "followers": "2.58M subscribers",
-    "popularContent": "Isa Isarb - Sampai (Official Music Video)",
+    "popularContent": "N/A",
     "contact": "N/A",
     "imagePath": "assets/img/user1/20230110_setup1_desk_setup.png",
     "sourceLink": "https://www.youtube.com/watch?v=HeGcdOGG6A0",
@@ -232,6 +232,126 @@
         "href": "#",
         "dataInfo": "LOOPEDECK EDITING CONSOLE",
         "link1": "https://s.shopee.com.my/3AmvzJ17H8",
+        "link2": "N/A"
+      }
+    ]
+  },
+  {
+    "id": "user2",
+    "name": "Syafiq Aiman",
+    "category": "Youtuber",
+    "description": "N/A",
+    "basedIn": "Malaysia",
+    "website": "https://www.youtube.com/@SyafiqAiman",
+    "followers": "1.24M subscribers",
+    "popularContent": "N/A",
+    "contact": "N/A",
+    "imagePath": "assets/img/user2/20210719_setup2_desk_setup.png",
+    "sourceLink": "https://www.youtube.com/watch?v=q7CuTI3ndjM",
+    "products": [
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "RAM",
+        "href": "#",
+        "dataInfo": "TRIDENT Z RGB DDR4 4x8gb (32GB)",
+        "link1": "https://s.shopee.com.my/6AQYHA9lVM",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "GPU",
+        "href": "#",
+        "dataInfo": "RTX 2070 SUPER",
+        "link1": "https://s.shopee.com.my/LSlKBGdvo",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "CPU COOLER",
+        "href": "#",
+        "dataInfo": "EK AIO Elite 360 D-RGB",
+        "link1": "https://s.shopee.com.my/7AJ5Tkn6tW",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "MOUSE",
+        "href": "#",
+        "dataInfo": "STEELSERIES RIVAL 600",
+        "link1": "https://s.shopee.com.my/5fUHgUjPg0",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "KEYBOARD",
+        "href": "#",
+        "dataInfo": "STEELSERIES RIVAL M750",
+        "link1": "https://s.shopee.com.my/5AY15WZ7gp",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "SPEAKER",
+        "href": "#",
+        "dataInfo": "HARMAN KARDON SOUND STICK",
+        "link1": "https://s.shopee.com.my/4pvAgBWhzY",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "HEADSET STAND",
+        "href": "#",
+        "dataInfo": "ASUS ROG Throne Qi",
+        "link1": "https://s.shopee.com.my/9zdGpaB40U",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "MIC",
+        "href": "#",
+        "dataInfo": "Shure SM7dB",
+        "link1": "https://s.shopee.com.my/9f0QQgjre4",
+        "link2": "N/A"
+      }
+    ]
+  },
+  {
+    "id": "user3",
+    "name": "Example",
+    "category": "Example",
+    "description": "N/A",
+    "basedIn": "Malaysia",
+    "website": "https://www.Example.com/@Example",
+    "followers": "Example",
+    "popularContent": "N/A",
+    "contact": "N/A",
+    "imagePath": "assets/img/user0/202407_owner0_desk_setup.jpg",
+    "sourceLink": "https://www.Example.com/watch?v=q7CuTI3ndjM",
+    "products": [
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "Example",
+        "href": "#",
+        "dataInfo": "Example",
+        "link1": "https://s.shopee.com.my/8pRIkNOywV",
+        "link2": "N/A"
+      },
+      {
+        "shape": "rect",
+        "coords": "80,192,447,403",
+        "alt": "Example",
+        "href": "#",
+        "dataInfo": "Example",
+        "link1": "https://s.shopee.com.my/2qA5bKLlD0",
         "link2": "N/A"
       }
     ]
