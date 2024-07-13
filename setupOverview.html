@@ -13,7 +13,7 @@
     <h1 id="overviewTitle">Discover Setup Details and Products</h1>
     <p id="overviewDescription">Explore detailed setup information and find links to the products featured.</p>
     <div class="container">
-      <img src="" alt="Products" usemap="#productmap" class="main-image" id="mainImage" />
+      <img src="" alt="Desk Setup Img" usemap="#productmap" class="main-image" id="mainImage" />
       <map name="productmap" id="productmap">
         <!-- Generated coordinates will be inserted here -->
       </map>
@@ -21,6 +21,7 @@
 
       <!-- Toggle button for owner details -->
       <button id="toggleOwnerDetails">View Owner Details</button>
+      <p>Below, you can find more information about each product used in this setup.</p>
 
       <!-- Owner details section -->
       <div id="ownerDetailsSection" class="owner-details hidden">
@@ -32,10 +33,25 @@
         <!-- <p><span id="popularContentLabel">Most Popular Video/Article:</span> <span id="popularContent"></span></p> -->
         <!-- <p><span id="contactLabel">Contact Information:</span> <span id="contact"></span></p> -->
         <p><span id="websiteLabel">Website:</span> <span id="website"><a href="#"></a></span></p>
-        <button id="sourceButton">Setup's Source</button>
+        <button id="sourceButton">PC Setup's Video Source</button>
       </div>
     </div>
-    <table id="productTableContainer">
+
+    <section id="products">
+      <div class="section-content">
+          <h2>Products</h2>
+          <!-- <input type="text" id="productSearch" placeholder="Search for products..."> -->
+          <div id="productsList" class="products-grid"></div>
+      </div>
+    </section>
+    <section id="gallery">
+        <div class="section-content">
+            <h2>Gallery</h2>
+            <div id="galleryImages" class="gallery-grid"></div>
+        </div>
+    </section>
+
+    <!-- <table id="productTableContainer">
       <thead>
         <tr>
           <th id="tableHeaderNo">No</th>
@@ -45,11 +61,14 @@
         </tr>
       </thead>
       <tbody id="productTableBody">
-        <!-- Placeholder for dynamic content -->
       </tbody>
-    </table>
+    </table> -->
   </main>
   <footer id="footer-placeholder" class="footer"></footer>
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
   <script src="js/loadPartials.js"></script>
   <script src="js/setupOverview.js"></script>
   <script src="js/applyLanguage.js"></script>

@@ -5,10 +5,10 @@
     "category": "Personal",
     "description": "inExperienced web developer with a focus on creating interactive and user-friendly websites.",
     "basedIn": "Malaysia",
-    "website": "https://nikazizi563.github.io",
+    "website": "https://example.github.io",
     "followers": "N/A",
     "popularContent": "N/A",
-    "contact": "nikazizicareer@gmail.com",
+    "contact": "example@gexamplemail.com",
     "imagePath": "assets/img/user0/202407_owner0_desk_setup.jpg",
     "sourceLink": "https://example.com/owner0",
     "products": [
@@ -16,6 +16,8 @@
         "shape": "rect",
         "coords": "80,192,447,403",
         "alt": "Monitor",
+        "image": "assets/img/user0/monitor.jpg",
+        "description": "A high-refresh rate 1080p 27-inch monitor.",
         "href": "#",
         "dataInfo": "Acer Nitro VG270P",
         "link1": "https://s.shopee.com.my/7KcGi4fgvL",
@@ -25,8 +27,10 @@
         "shape": "rect",
         "coords": "171,402,333,469",
         "alt": "Tablet",
+        "image": "assets/img/user0/tablet.avif",
+        "description": "Android Tablet",
         "href": "#",
-        "dataInfo": "Samsung Tab A8 2021",
+        "dataInfo": "Samsung Galaxy Tab A8 2021",
         "link1": "https://s.shopee.com.my/9A3utfouy1",
         "link2": "https://c.lazada.com.my/t/c.cGqKjV"
       },
@@ -34,6 +38,8 @@
         "shape": "rect",
         "coords": "71,471,337,532",
         "alt": "Keyboard",
+        "image": "assets/img/user0/keyboard.jpg",
+        "description": "A mechanical keyboard with RGB lighting.",
         "href": "#",
         "dataInfo": "Royal Kludge RK H81",
         "link1": "https://s.shopee.com.my/7AIqWWewHy",
@@ -43,6 +49,8 @@
         "shape": "rect",
         "coords": "71,471,337,532",
         "alt": "Keyboard Switches",
+        "image": "assets/img/user0/switch.png",
+        "description": "Silent Mechanical Keyboard",
         "href": "#",
         "dataInfo": "Outemu Honey Peach Silent Linear",
         "link1": "https://s.shopee.com.my/4AfT2mDEW5",
@@ -52,6 +60,8 @@
         "shape": "rect",
         "coords": "440,470,491,509",
         "alt": "Mouse",
+        "image": "assets/img/user0/mouse.jpg",
+        "description": "A gaming mouse with customizable buttons.",
         "href": "#",
         "dataInfo": "Logitech G304",
         "link1": "https://s.shopee.com.my/7zrxW8mwim",
@@ -59,17 +69,10 @@
       },
       {
         "shape": "rect",
-        "coords": "475,204,567,347",
-        "alt": "Controller",
-        "href": "#",
-        "dataInfo": "DS4 OEM",
-        "link1": "https://s.shopee.com.my/9f0BVIZZVE",
-        "link2": "https://s.shopee.com.my/9f0BVIZZVE"
-      },
-      {
-        "shape": "rect",
         "coords": "637,205,780,408",
         "alt": "Headphone",
+        "image": "assets/img/user0/headphones.png",
+        "description": "Noise-canceling over-ear headphones.",
         "href": "#",
         "dataInfo": "Cooler Master MH630",
         "link1": "https://s.shopee.com.my/AUZIUvPZlA",
@@ -79,6 +82,8 @@
         "shape": "rect",
         "coords": "637,205,780,408",
         "alt": "Study Desk",
+        "image": "assets/img/user0/table.jpg",
+        "description": "A solid foldable study desk or computer table",
         "href": "#",
         "dataInfo": "Foldable Computer table / Study Desk",
         "link1": "https://shope.ee/3VNJfq2R17?share_channel_code=1 ",
@@ -88,11 +93,16 @@
         "shape": "rect",
         "coords": "637,205,780,408",
         "alt": "Table Storage Shelf",
+        "image": "assets/img/user0/tablestorageshelf.jpg",
+        "description": "Add-On Storage Shelf",
         "href": "#",
         "dataInfo": "2 Layer Desktop Storage Shelf",
         "link1": "https://shope.ee/4fZH439mbc?share_channel_code=1 ",
         "link2": "https://shope.ee/4fZH439mbc?share_channel_code=1 "
       }
+    ],
+    "gallery": [
+        "assets/img/user0/setup1.jpg"
     ]
   },
   {
@@ -234,6 +244,9 @@
         "link1": "https://s.shopee.com.my/3AmvzJ17H8",
         "link2": "N/A"
       }
+    ],
+    "gallery": [
+        "assets/img/user1/20230110_setup1_desk_setup.png"
     ]
   },
   {
@@ -321,6 +334,9 @@
         "link1": "https://s.shopee.com.my/9f0QQgjre4",
         "link2": "N/A"
       }
+    ],
+    "gallery": [
+        "assets/img/user2/20210719_setup2_desk_setup.png"
     ]
   }
 ]
