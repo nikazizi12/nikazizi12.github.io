@@ -237,7 +237,6 @@ document.addEventListener("DOMContentLoaded", function () {
         productImg.src = `${product.image}`;
         productImg.onerror = () => { productImg.src = defaultImage }; // Fallback to default image on error
         productImg.alt = product.alt;
-        productImg.addEventListener('click', () => openModal(product.image));
         
         const productName = document.createElement('h3');
         productName.textContent = `(${product.alt}) ${product.dataInfo}`;
@@ -256,6 +255,10 @@ document.addEventListener("DOMContentLoaded", function () {
         productDiv.appendChild(productDesc);
         productDiv.appendChild(productLink);
         
+        productDiv.addEventListener("click", function() {
+              window.location.href = product.link1;
+            });
+            
         productsList.appendChild(productDiv);
     });
   }
