@@ -6,13 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const itemsPerPage = 10;
   let currentPage = 1;
-  let options = []; // Initialize options array
+  let options = [];
 
   function fetchDataAndInitialize() {
     fetch("assets/optionsData.json")
       .then((response) => response.json())
       .then((data) => {
-        // Assign data to the outer scoped 'options' array
         options = data.map((item) => ({
           id: item.id,
           name: item.name,
