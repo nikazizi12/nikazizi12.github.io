@@ -1,160 +1,141 @@
 document.addEventListener("DOMContentLoaded", function () {
   const optionsList = document.querySelector(".options-list");
-  const searchInput = document.getElementById("searchInput");
-  const filterOptions = document.getElementById("filterOptions");
-  const paginationButtons = document.getElementById("paginationButtons");
+  const setupList = document.getElementById('setupList');
+  const imageModal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImg');
+  const closeModal = document.getElementsByClassName('close')[0];
 
-  const itemsPerPage = 10;
-  let currentPage = 1;
-  let options = [];
+  // let options = [];
+  let setups = [];
 
   function fetchDataAndInitialize() {
     fetch("assets/optionsData.json")
       .then((response) => response.json())
       .then((data) => {
-        options = data.map((item) => ({
+        // options = data.map((item) => ({
+        //   id: item.id,
+        //   name: item.name,
+        //   basedIn: item.basedIn,
+        //   imagePath: item.imagePath,
+        //   description: item.description,
+        //   sourceLink: item.sourceLink,
+        // }));
+
+        setups = data.map((item) => ({
           id: item.id,
           name: item.name,
-          basedIn: item.basedIn,
+          description: item.description,
+          imagePath: item.imagePath,
+          sourceLink: item.sourceLink,
         }));
 
-        initialize(options);
+        // initialize(options);
+        displaySetups(setups);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   }
 
-  function initialize(options) {
-    function filterAndSearchOptions() {
-      const searchQuery = searchInput.value.trim().toLowerCase();
-      const filterValue = filterOptions.value.toLowerCase();
+  // function initialize(options) {
+  //   function displayOptions(page, options, itemsPerPage, optionsList) {
+  //     optionsList.innerHTML = "";
 
-      let filterValues = [];
+  //     const startIndex = (page - 1) * itemsPerPage;
+  //     const endIndex = startIndex + itemsPerPage;
+  //     const paginatedOptions = options.slice(startIndex, endIndex);
 
-      // Handle the case where multiple values are selected
-      if (filterValue === "all") {
-        filterValues = options.map((option) => option.basedIn.toLowerCase());
-      } else if (filterValue.includes(",")) {
-        filterValues = filterValue.split(",").map((item) => item.trim());
-      } else {
-        filterValues = [filterValue];
+  //     paginatedOptions.forEach((option, index) => {
+  //       const row = document.createElement("tr");
+  //       row.classList.add("option");
+  //       row.style.cursor = "pointer"; // Make the row look clickable
+
+  //       const cellNo = document.createElement("td");
+  //       cellNo.textContent = startIndex + index + 1;
+  //       row.appendChild(cellNo);
+
+  //       const cellName = document.createElement("td");
+  //       cellName.textContent = option.name;
+  //       row.appendChild(cellName);
+
+  //       const cellAction = document.createElement("td");
+  //       cellAction.classList.add("columnOption");
+  //       cellAction.textContent = "View"; // Display 'View' text directly in the cell
+  //       row.appendChild(cellAction);
+
+  //       // Make entire row clickable
+  //       row.addEventListener("click", function () {
+  //         console.log(`Opened option: ${option.name}`);
+  //         window.location.href = `setupOverview.html?id=${option.id}`;
+  //       });
+
+  //       optionsList.appendChild(row);
+  //     });
+  //   }
+
+  //   // Initial display
+  //   displayOptions(1, options, 10, optionsList);
+  // }
+
+  // Display setups
+  function displaySetups(setups) {
+    setupList.innerHTML = '';
+    setups.forEach(setup => {
+        const setupDiv = document.createElement('div');
+        setupDiv.classList.add('setup');
+        
+        const setupImg = document.createElement('img');
+        setupImg.src = setup.imagePath;
+        setupImg.alt = setup.name;
+        setupImg.addEventListener('click', () => openModal(setup.imagePath));
+        
+        const setupName = document.createElement('h3');
+        setupName.textContent = setup.name;
+        
+        const setupDesc = document.createElement('p');
+        setupDesc.textContent = setup.description;
+        
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.classList.add('affiliate-buttons');
+
+        const viewSetupButton = document.createElement('button');
+        viewSetupButton.textContent = 'View Setup Details';
+        viewSetupButton.classList.add('affiliate-button');
+        viewSetupButton.onclick = () => window.open(`setupOverview.html?id=${setup.id}`, '_blank');
+
+        const viewComponentsButton = document.createElement('button');
+        viewComponentsButton.textContent = 'View Owner Video';
+        viewComponentsButton.classList.add('affiliate-button');
+        viewComponentsButton.onclick = () => window.open(setup.sourceLink, '_blank');
+
+        buttonsDiv.appendChild(viewSetupButton);
+        buttonsDiv.appendChild(viewComponentsButton);
+
+        setupDiv.appendChild(setupImg);
+        setupDiv.appendChild(setupName);
+        setupDiv.appendChild(setupDesc);
+        setupDiv.appendChild(buttonsDiv);
+        
+        setupList.appendChild(setupDiv);
+    });
+  }
+
+  // Open modal
+  function openModal(image) {
+      modalImg.src = image;
+      imageModal.style.display = 'block';
+  }
+
+  // Close modal
+  closeModal.onclick = () => {
+      imageModal.style.display = 'none';
+  }
+
+  // Close modal when clicking outside of the image
+  window.onclick = (e) => {
+      if (e.target === imageModal) {
+          imageModal.style.display = 'none';
       }
-
-      const searchedOptions = options.filter((option) => {
-        const nameMatch = option.name.toLowerCase().includes(searchQuery);
-        const basedInNormalized = option.basedIn.toLowerCase();
-
-        // Check if basedInNormalized includes any of the filterValues
-        const basedInMatch = filterValues.some((value) => {
-          // Handle the case where "USA" should match "United States"
-          if (value === "usa") {
-            return (
-              basedInNormalized.includes("usa") ||
-              basedInNormalized.includes("united states")
-            );
-          } else {
-            return basedInNormalized.includes(value);
-          }
-        });
-
-        return nameMatch && basedInMatch;
-      });
-
-      currentPage = 1; // Reset current page when filter changes
-      displayOptions(currentPage, searchedOptions, itemsPerPage, optionsList);
-      createPaginationButtons(
-        searchedOptions,
-        itemsPerPage,
-        displayOptions,
-        optionsList,
-        paginationButtons
-      );
-    }
-
-    function createPaginationButtons(
-      options,
-      itemsPerPage,
-      displayOptions,
-      optionsList,
-      paginationButtons
-    ) {
-      const totalPages = Math.ceil(options.length / itemsPerPage);
-      paginationButtons.innerHTML = "";
-
-      for (let i = 1; i <= totalPages; i++) {
-        const button = document.createElement("button");
-        button.textContent = i;
-        button.addEventListener("click", function () {
-          currentPage = i;
-          displayOptions(currentPage, options, itemsPerPage, optionsList);
-          updatePaginationButtons(currentPage);
-        });
-        paginationButtons.appendChild(button);
-      }
-
-      updatePaginationButtons(currentPage);
-    }
-
-    function updatePaginationButtons(currentPage) {
-      const buttons = paginationButtons.getElementsByTagName("button");
-      for (let button of buttons) {
-        if (parseInt(button.textContent) === currentPage) {
-          button.classList.add("active");
-        } else {
-          button.classList.remove("active");
-        }
-      }
-    }
-
-    function displayOptions(page, options, itemsPerPage, optionsList) {
-      optionsList.innerHTML = "";
-
-      const startIndex = (page - 1) * itemsPerPage;
-      const endIndex = startIndex + itemsPerPage;
-      const paginatedOptions = options.slice(startIndex, endIndex);
-
-      paginatedOptions.forEach((option, index) => {
-        const row = document.createElement("tr");
-        row.classList.add("option");
-        row.style.cursor = "pointer"; // Make the row look clickable
-
-        const cellNo = document.createElement("td");
-        cellNo.textContent = startIndex + index + 1;
-        row.appendChild(cellNo);
-
-        const cellName = document.createElement("td");
-        cellName.textContent = option.name;
-        row.appendChild(cellName);
-
-        const cellAction = document.createElement("td");
-        cellAction.classList.add("columnOption");
-        cellAction.textContent = "View"; // Display 'View' text directly in the cell
-        row.appendChild(cellAction);
-
-        // Make entire row clickable
-        row.addEventListener("click", function () {
-          console.log(`Opened option: ${option.name}`);
-          window.location.href = `setupOverview.html?id=${option.id}`;
-        });
-
-        optionsList.appendChild(row);
-      });
-    }
-
-    // Initial display
-    displayOptions(currentPage, options, itemsPerPage, optionsList);
-    createPaginationButtons(
-      options,
-      itemsPerPage,
-      displayOptions,
-      optionsList,
-      paginationButtons
-    );
-
-    // Event listeners
-    searchInput.addEventListener("input", filterAndSearchOptions);
-    filterOptions.addEventListener("change", filterAndSearchOptions);
   }
 
   // Fetch data and initialize
