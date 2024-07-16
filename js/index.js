@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const optionsList = document.querySelector(".options-list");
+  // const optionsList = document.querySelector(".options-list");
   const setupList = document.getElementById('setupList');
   const imageModal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImg');
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setupImg.addEventListener('click', () => openModal(setup.imagePath));
         
         const setupCont = document.createElement('div');
-        setupCont.onclick = () => window.open(`setupOverview.html?id=${setup.id}`, '_blank');
+        setupCont.onclick = () => {window.location.href = `setupOverview.html?id=${setup.id}`;};
         const setupName = document.createElement('h3');
         setupName.textContent = setup.name;
         
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const viewSetupButton = document.createElement('button');
         viewSetupButton.textContent = 'View Setup Details';
         viewSetupButton.classList.add('affiliate-button');
-        viewSetupButton.onclick = () => window.open(`setupOverview.html?id=${setup.id}`, '_blank');
+        viewSetupButton.onclick = () => {window.location.href = `setupOverview.html?id=${setup.id}`;};
 
         const viewComponentsButton = document.createElement('button');
         viewComponentsButton.textContent = 'View Owner Video';
