@@ -89,6 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
         setupImg.alt = setup.name;
         setupImg.addEventListener('click', () => openModal(setup.imagePath));
         
+        const setupCont = document.createElement('div');
+        setupCont.onclick = () => window.open(`setupOverview.html?id=${setup.id}`, '_blank');
         const setupName = document.createElement('h3');
         setupName.textContent = setup.name;
         
@@ -112,8 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
         buttonsDiv.appendChild(viewComponentsButton);
 
         setupDiv.appendChild(setupImg);
-        setupDiv.appendChild(setupName);
-        setupDiv.appendChild(setupDesc);
+        setupCont.appendChild(setupName);
+        setupCont.appendChild(setupDesc);
+        setupDiv.appendChild(setupCont);
         setupDiv.appendChild(buttonsDiv);
         
         setupList.appendChild(setupDiv);

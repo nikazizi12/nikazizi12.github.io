@@ -232,7 +232,10 @@ document.addEventListener("DOMContentLoaded", function () {
     products.forEach(product => {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
-        
+
+        const productImgDiv = document.createElement('div');
+        const productConDiv = document.createElement('div');
+
         const productImg = document.createElement('img');
         productImg.src = `${product.image}`;
         productImg.onerror = () => { productImg.src = defaultImage }; // Fallback to default image on error
@@ -250,12 +253,15 @@ document.addEventListener("DOMContentLoaded", function () {
         productLink.textContent = 'View on Shopee'; // Replace with appropriate text
         productLink.classList.add('affiliate-link');
 
-        productDiv.appendChild(productImg);
-        productDiv.appendChild(productName);
-        productDiv.appendChild(productDesc);
-        productDiv.appendChild(productLink);
+        productImgDiv.appendChild(productImg);
+        productConDiv.appendChild(productName);
+        productConDiv.appendChild(productDesc);
+        productConDiv.appendChild(productLink);
+        productDiv.appendChild(productImgDiv);
+        productDiv.appendChild(productConDiv);
         
-        productDiv.addEventListener("click", function() {
+        productImgDiv.addEventListener('click', () => openModal(product.image));
+        productConDiv.addEventListener("click", function() {
               window.location.href = product.link1;
             });
             
