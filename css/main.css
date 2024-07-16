@@ -39,9 +39,11 @@ section {
 }
 
 .setup img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+    height: 200px; /* Set a fixed height */
+    width: 100%; /* Make the image take the full width of its container */
+    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .setup h3, .setup p {
@@ -111,4 +113,43 @@ section {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+/* Add styles for the buttons */
+.affiliate-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.affiliate-button {
+    padding: 0.5rem 1rem;
+    background-color: #f90;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 48%;
+}
+
+.affiliate-button:hover {
+    background-color: #e80;
+}
+
+.component-list {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.component-list li {
+    margin-bottom: 0.5rem;
+}
+
+.component-link {
+    color: #00f;
+    text-decoration: none;
+}
+
+.component-link:hover {
+    text-decoration: underline;
 }

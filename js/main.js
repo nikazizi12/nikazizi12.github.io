@@ -37,19 +37,49 @@ document.addEventListener('DOMContentLoaded', () => {
             const setupDesc = document.createElement('p');
             setupDesc.textContent = setup.description;
             
-            const setupLink = document.createElement('a');
-            setupLink.href = setup.affiliateLink;
-            setupLink.target = '_blank';
-            setupLink.textContent = 'View on Shopee'; // Replace with appropriate text
-            setupLink.classList.add('affiliate-link');
+            const buttonsDiv = document.createElement('div');
+            buttonsDiv.classList.add('affiliate-buttons');
+
+            const viewSetupButton = document.createElement('button');
+            viewSetupButton.textContent = 'View Setup';
+            viewSetupButton.classList.add('affiliate-button');
+            viewSetupButton.onclick = () => window.open(setup.affiliateLink, '_blank');
+
+            const viewComponentsButton = document.createElement('button');
+            viewComponentsButton.textContent = 'View Components';
+            viewComponentsButton.classList.add('affiliate-button');
+            viewComponentsButton.onclick = () => toggleComponentsList(setupDiv);
+
+            buttonsDiv.appendChild(viewSetupButton);
+            buttonsDiv.appendChild(viewComponentsButton);
+
+            const componentsList = document.createElement('ul');
+            componentsList.classList.add('component-list');
+            componentsList.style.display = 'none';
+            setup.components.forEach(component => {
+                const componentItem = document.createElement('li');
+                const componentLink = document.createElement('a');
+                componentLink.href = component.affiliateLink;
+                componentLink.target = '_blank';
+                componentLink.textContent = component.name;
+                componentLink.classList.add('component-link');
+                componentItem.appendChild(componentLink);
+                componentsList.appendChild(componentItem);
+            });
 
             setupDiv.appendChild(setupImg);
             setupDiv.appendChild(setupName);
             setupDiv.appendChild(setupDesc);
-            setupDiv.appendChild(setupLink);
+            setupDiv.appendChild(buttonsDiv);
+            setupDiv.appendChild(componentsList);
             
             setupList.appendChild(setupDiv);
         });
+    }
+
+    function toggleComponentsList(setupDiv) {
+        const componentsList = setupDiv.querySelector('.component-list');
+        componentsList.style.display = componentsList.style.display === 'none' ? 'block' : 'none';
     }
 
     // Display gallery
