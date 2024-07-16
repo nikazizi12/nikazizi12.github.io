@@ -16,9 +16,9 @@
       </section>
         <section class="how-it-works">
           <h3>How It Works</h3>
-          <p>Use the search bar to find specific setups. Click on the source to view detailed information about each setup.</p>
+          <p>Click on the pc setups to view detailed information about each setup.</p>
         </section>
-        <input type="text" id="searchInput" placeholder="Search" />
+        <!-- <input type="text" id="searchInput" placeholder="Search" />
         <select id="filterOptions">
             <option value="all">All Categories</option>
             <option value="Malaysia">Malaysia</option>
@@ -28,8 +28,8 @@
             <option value="Canada">Canada</option>
             <option value="Australia">Australia</option>
             <option value="United Kingdom">United Kingdom</option>
-        </select>
-        <table id="optionsTable">
+        </select> -->
+        <!-- <table id="optionsTable">
             <thead>
                 <tr>
                     <th class="no-column">No</th>
@@ -38,24 +38,21 @@
                 </tr>
             </thead>
             <tbody class="options-list"></tbody>
-        </table>
-        <div id="paginationButtons" class="pagination"></div>
-        <!-- <button id="toggleLanguageFrame">Change Language</button> -->
+        </table> -->
+        <!-- <div id="paginationButtons" class="pagination"></div> -->
+        <section id="setups">
+            <div id="setupList" class="setup-list"></div>
+        </section>
     </main>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
     <!-- Include Footer -->
     <footer id="footer-placeholder" class="footer"></footer>
-    <script src="js/loadPartials.js"></script>
+    <!-- load Header Footer using loadPartials.js -->
+    <script src="js/loadPartials.js"></script> 
     <script defer type="module" src="js/index.js"></script>
-    <script src="js/applyLanguage.js"></script>
-    <!-- <script>
-      document.getElementById('toggleLanguageFrame').addEventListener('click', function() {
-        const languageFrame = document.getElementById('languageFrame');
-        if (languageFrame.classList.contains('hidden')) {
-          languageFrame.classList.remove('hidden');
-        } else {
-          languageFrame.classList.add('hidden');
-        }
-      });
-    </script> -->
+    <!-- <script src="js/applyLanguage.js"></script> -->
 </body>
 </html>

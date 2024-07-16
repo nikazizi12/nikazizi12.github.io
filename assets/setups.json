@@ -1,0 +1,81 @@
+{
+    "setups": [
+        {
+            "name": "Ultimate Gaming Setup",
+            "image": "user0/202407_owner0_desk_setup.png",
+            "description": "Experience the best gaming performance with this high-end setup. Includes a powerful gaming PC, mechanical keyboard, gaming mouse, and 4K monitor.",
+            "affiliateLink": "https://www.example.com/example-gaming-setup-affiliate-link/",
+            "components": [
+                {
+                    "name": "Gaming PC",
+                    "affiliateLink": "https://www.example.com/example-gaming-pc-affiliate-link/"
+                },
+                {
+                    "name": "Mechanical Keyboard",
+                    "affiliateLink": "https://www.example.com/example-keyboard-affiliate-link/"
+                },
+                {
+                    "name": "Gaming Mouse",
+                    "affiliateLink": "https://www.example.com/example-mouse-affiliate-link/"
+                },
+                {
+                    "name": "4K Monitor",
+                    "affiliateLink": "https://www.example.com/example-monitor-affiliate-link/"
+                }
+            ]
+        },
+        {
+            "name": "Productivity Setup",
+            "image": "user1/20230110_setup1_desk_setup.png",
+            "description": "Enhance your productivity with this efficient setup. Includes a powerful workstation, ergonomic keyboard, mouse, and dual monitors.",
+            "affiliateLink": "https://www.example.com/example-productivity-setup-affiliate-link/",
+            "components": [
+                {
+                    "name": "Workstation PC",
+                    "affiliateLink": "https://www.example.com/example-workstation-pc-affiliate-link/"
+                },
+                {
+                    "name": "Ergonomic Keyboard",
+                    "affiliateLink": "https://www.example.com/example-ergonomic-keyboard-affiliate-link/"
+                },
+                {
+                    "name": "Ergonomic Mouse",
+                    "affiliateLink": "https://www.example.com/example-ergonomic-mouse-affiliate-link/"
+                },
+                {
+                    "name": "Dual Monitors",
+                    "affiliateLink": "https://www.example.com/example-dual-monitors-affiliate-link/"
+                }
+            ]
+        },
+        {
+            "name": "Home Office Setup",
+            "image": "user2/20210719_setup2_desk_setup.png",
+            "description": "Create the perfect home office with this setup. Includes a compact desktop PC, wireless keyboard, mouse, and a 27-inch monitor.",
+            "affiliateLink": "https://www.example.com/example-home-office-setup-affiliate-link/",
+            "components": [
+                {
+                    "name": "Compact Desktop PC",
+                    "affiliateLink": "https://www.example.com/example-desktop-pc-affiliate-link/"
+                },
+                {
+                    "name": "Wireless Keyboard",
+                    "affiliateLink": "https://www.example.com/example-wireless-keyboard-affiliate-link/"
+                },
+                {
+                    "name": "Wireless Mouse",
+                    "affiliateLink": "https://www.example.com/example-wireless-mouse-affiliate-link/"
+                },
+                {
+                    "name": "27-inch Monitor",
+                    "affiliateLink": "https://www.example.com/example-27-inch-monitor-affiliate-link/"
+                }
+            ]
+        }
+    ],
+    "gallery": [
+        "placeholder.png",
+        "placeholder.png",
+        "placeholder.png"
+    ]
+}
