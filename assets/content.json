@@ -1,0 +1,75 @@
+{
+    "header": {
+        "title": "My Budget Desk Setup",
+        "subtitle": "Limit your creativity with your wallet size"
+    },
+    "sections": [
+        {
+            "id": "main-setup",
+            "title": "Desk Setup",
+            "image": "assets/img/desk_setup.png",
+            "description": "I am using 120cm study/computer desk, with a table add-on called Storage Shelf on top of it which both of it was bought online",
+            "items": [
+                {
+                    "name": "Desk",
+                    "link": "https://s.shopee.com.my/8AD3IxcWbR"
+                },
+                {
+                    "name": "Desk Add-on",
+                    "link": "https://s.shopee.com.my/8KWTVGbtGU"
+                }
+            ]
+        },
+        {
+            "id": "inside-computer",
+            "title": "Inside My Computer",
+            "image": "assets/img/inside.jpg",
+            "description": "A glimpse inside my average PC setup.",
+            "items": [
+                {
+                    "name": "CPU Cooler",
+                    "link": "https://s.shopee.com.my/3AoNMUqEln"
+                },
+                {
+                    "name": "RAM",
+                    "link": "https://s.shopee.com.my/9f1r6UvYl3"
+                },
+                {
+                    "name": "SSD",
+                    "link": "https://s.shopee.com.my/608YjbzTQh"
+                },
+                {
+                    "name": "Case",
+                    "link": "https://s.shopee.com.my/AKHXtbUpfL"
+                }
+            ]
+        },
+        {
+            "id": "on-desk",
+            "title": "On My Desk",
+            "image": "assets/img/on-desk.jpg",
+            "description": "Here are the gadgets and accessories that live on my desk for me, myself and i everyday.",
+            "items": [
+                {
+                    "name": "Keyboard",
+                    "link": "https://s.shopee.com.my/6V4pKKlA7f"
+                },
+                {
+                    "name": "Mouse",
+                    "link": "https://s.shopee.com.my/5KsrwBpbUS"
+                },
+                {
+                    "name": "Controller",
+                    "link": "https://s.shopee.com.my/5VCI8Uoy9V"
+                },
+                {
+                    "name": "Monitor",
+                    "link": "https://s.shopee.com.my/6KlP81lnSc"
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "text": "&copy; 2024 My Computer Setup | <a href='https://aziziyahya.github.io/' class='text-blue'>Just Me</a>"
+    }
+}

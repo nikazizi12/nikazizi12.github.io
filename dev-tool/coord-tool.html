@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Tool ggSetupOverview</title>
+    <link rel="stylesheet" href="coord-tool.css" />
+  </head>
+  <body>
+    <h1>Dev Tool for ggSetupOverview</h1>
+
+    <div id="infoInput" class="input-section">
+      <h2>Input YouTuber Information</h2>
+      <label for="rankInput">ID:</label>
+      <input type="number" id="rankInput" min="1" step="1" value="1" />
+      <label for="inputChoice">Input Type:</label>
+      <select id="inputChoice">
+        <option value="json">JSON Format</option>
+        <option value="non-json">Regular Format</option>
+      </select>
+      <div id="jsonInputFormat">
+        <textarea
+          id="inputData"
+          placeholder='Enter YouTuber information in JSON format
+{
+    "name": "11Example",
+    "category": "22Example",
+    "description": "33Example",
+    "basedIn": "44Example",
+    "website": "55Example",
+    "followers": "66",
+    "popularContent": "77Example"
+}'
+        ></textarea>
+      </div>
+      <div id="normalInputFormat" style="display: none">
+        <input type="text" id="nameInput" placeholder="Name" />
+        <input type="text" id="categoryInput" placeholder="Category" />
+        <textarea id="descriptionInput" placeholder="Description"></textarea>
+        <input type="text" id="basedInInput" placeholder="Based In" />
+        <input type="text" id="websiteInput" placeholder="Website" />
+        <input
+          type="number"
+          id="followersInput"
+          placeholder="Followers Count"
+        />
+        <input
+          type="text"
+          id="popularContentInput"
+          placeholder="Popular Content"
+        />
+      </div>
+    </div>
+
+    <div class="input-section">
+      <h2>Desk Setup's Source Link</h2>
+      <input type="text" id="sourceLinkInput" placeholder="Source Link" />
+    </div>
+
+    <div id="imageInput" class="input-section">
+      <h2>Desk Setup Image</h2>
+      <div id="imageDropZone">
+        <p>Drag & Drop an image here or click to upload.</p>
+        <input type="file" id="imageInput" accept="image/*" />
+      </div>
+    </div>
+
+    <div id="canvas_container" class="input-section">
+      <canvas id="imageCanvas"></canvas>
+    </div>
+
+    <div id="productForms" class="input-section"></div>
+
+    <div id="coordsOutput" class="input-section">
+      <h2>Generated JSON Code</h2>
+      <textarea
+        id="jsonOutput"
+        placeholder='{
+    "name": "11Example",
+    "category": "22Example",
+    "description": "33Example",
+    "basedIn": "44Example",
+    "website": "55Example",
+    "followers": "66",
+    "popularContent": "77Example",
+    "contact": "N/A",
+    "sourceLink": "",
+    "imagePath": "assets/placeholder.jpg",
+    "products": [
+        {
+        "shape": "rect",
+        "coords": "214,253,346,310",
+        "alt": "Product1",
+        "href": "#",
+        "dataInfo": "Product1",
+        "link1": "link1",
+        "link2": "link2"
+        }
+    ]
+}'
+        readonly
+      ></textarea>
+      <div id="thebuttons" style="text-align: center">
+        <button onclick="location.href='../index.html'">Home</button>
+        <button id="clearButton">Reset</button>
+        <!-- <button id="generateButton">Generate JSON</button> -->
+        <button id="copyButton">Copy Code</button>
+        <button id="exportButton">Export JSON</button>
+      </div>
+    </div>
+
+    <div id="notification" class="notification">
+      JSON data copied to clipboard!
+    </div>
+
+    <script src="coord-tool.js"></script>
+  </body>
+</html>
