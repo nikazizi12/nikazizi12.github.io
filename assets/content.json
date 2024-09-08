@@ -1,7 +1,7 @@
 {
     "header": {
         "title": "My Budget Desk Setup",
-        "subtitle": "Limit your creativity with your wallet size"
+        "subtitle": "Limit my creativity with my wallet size"
     },
     "sections": [
         {
@@ -11,11 +11,13 @@
             "description": "I am using 120cm study/computer desk, with a table add-on called Storage Shelf on top of it which both of it was bought online",
             "items": [
                 {
-                    "name": "Desk",
+                    "type": "Desk",
+                    "name": "",
                     "link": "https://s.shopee.com.my/8AD3IxcWbR"
                 },
                 {
-                    "name": "Desk Add-on",
+                    "type": "Desk Add-on",
+                    "name": "",
                     "link": "https://s.shopee.com.my/8KWTVGbtGU"
                 }
             ]
@@ -27,19 +29,23 @@
             "description": "A glimpse inside my average PC setup.",
             "items": [
                 {
-                    "name": "CPU Cooler",
+                    "type": "CPU Cooler",
+                    "name": "THERMALRIGHT P.A 120 SE",
                     "link": "https://s.shopee.com.my/3AoNMUqEln"
                 },
                 {
-                    "name": "RAM",
+                    "type": "RAM",
+                    "name": "CORSAIR VENGEANCE RGB PRO SL WHITE",
                     "link": "https://s.shopee.com.my/9f1r6UvYl3"
                 },
                 {
-                    "name": "SSD",
+                    "type": "SSD",
+                    "name": "ADATA XPG SX8200 PRO",
                     "link": "https://s.shopee.com.my/608YjbzTQh"
                 },
                 {
-                    "name": "Case",
+                    "type": "PC Case",
+                    "name": "INWIN 101",
                     "link": "https://s.shopee.com.my/AKHXtbUpfL"
                 }
             ]
@@ -51,19 +57,23 @@
             "description": "Here are the gadgets and accessories that live on my desk for me, myself and i everyday.",
             "items": [
                 {
-                    "name": "Keyboard",
+                    "type": "Keyboard",
+                    "name": "Royal Kludge RK H81",
                     "link": "https://s.shopee.com.my/6V4pKKlA7f"
                 },
                 {
-                    "name": "Mouse",
+                    "type": "Mouse",
+                    "name": "Logitech G304",
                     "link": "https://s.shopee.com.my/5KsrwBpbUS"
                 },
                 {
-                    "name": "Controller",
+                    "type": "Controller",
+                    "name": "DS4 OEM",
                     "link": "https://s.shopee.com.my/5VCI8Uoy9V"
                 },
                 {
-                    "name": "Monitor",
+                    "type": "Monitor",
+                    "name": "ACER VG270P",
                     "link": "https://s.shopee.com.my/6KlP81lnSc"
                 }
             ]

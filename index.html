@@ -79,7 +79,8 @@
                                 <ul class="list-group">
                                     ${section.items.map(item => `
                                         <li class="list-group-item">
-                                            ${item.name}: <a href="${item.link}" target="_blank">Buy here</a>
+                                            ${item.type}: <a href="${item.link}" target="_blank">Product Link</a>
+                                            <br>${item.name}
                                         </li>
                                     `).join('')}
                                 </ul>
